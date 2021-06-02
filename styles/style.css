@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #FFB7CD;
+}
+
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.display {
+  width: 300px;
+  height: 100px;
+  background-color: #FFFFFF;
+  border-top-left-radius: 0.5cm;
+  border-top-right-radius: 0.5cm;
+}
+
+.keypad {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (75px)[4];
+      grid-template-columns: repeat(4, 75px);
+  -ms-grid-rows: (75px)[5];
+      grid-template-rows: repeat(5, 75px);
+}
+
+.lng {
+  width: 150px;
+  border-bottom-left-radius: 0.5cm;
+}
+
+.alng {
+  position: relative;
+  left: 75px;
+}
+
+.aalng {
+  position: relative;
+  left: 75px;
+  border-bottom-right-radius: 0.5cm;
+}
+
+button {
+  border: none;
+  outline: none;
+  color: white;
+  font-size: larger;
+  font-family: Arial;
+  border-radius: 0cm;
+}
+
+.opt {
+  background-color: #FE6D99;
+}
+
+.num {
+  background-color: #FF5890;
+}
+
+.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+  overflow: auto;
+}
+
+.content {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.content p {
+  font-weight: light;
+  font-size: 30px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,101 @@
+//Colors
+$bodBacCol: #FFB7CD;
+$numBacCol: #FF5890;
+$optBacCol: #FE6D99;
+$numBorCol: #EE4875;
+$disBacCol: #FFFFFF;
+$texDarCol: #121116;
+$texLigCol: #C9C9CA;
+$borderCol: #E8436D;
+
+//Variables
+$btnDimensions: 75px;
+$borderRadius: 0.5cm;
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    background-color: $bodBacCol;
+}
+
+.wrapper
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.display
+{
+    width: $btnDimensions * 4;
+    height: 100px;
+    background-color: $disBacCol;
+    border-top-left-radius: $borderRadius;
+    border-top-right-radius: $borderRadius;
+}
+
+.keypad
+{
+    display: grid;
+    grid-template-columns: repeat(4, $btnDimensions);
+    grid-template-rows: repeat(5, $btnDimensions);
+}
+
+.lng
+{
+    width: 2 * $btnDimensions;
+    border-bottom-left-radius: $borderRadius;
+}
+
+.alng
+{
+    position: relative;
+    left: $btnDimensions;
+}
+
+.aalng
+{
+    position: relative;
+    left: $btnDimensions;
+    border-bottom-right-radius: $borderRadius;
+}
+
+button
+{
+    border: none;
+    outline: none;
+    color: white;
+    font-size: larger;
+    font-family: Arial;
+    border-radius: 0cm;
+}
+
+.opt
+{
+    background-color: $optBacCol;
+}
+
+.num
+{
+    background-color: $numBacCol;
+}
+
+.display
+{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    white-space: nowrap;
+    overflow: auto;
+}
+.content
+{
+    padding-right: 20px;
+    padding-left: 20px;
+}

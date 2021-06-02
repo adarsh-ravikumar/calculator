@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <title>Calculator</title>
+    <script src="./app.js" defer></script>
+</head>
+<body style="overflow: hidden;">
+    <div class="wrapper">
+        <div class="display">
+            <div class="content">
+                <p class="result" style="font-family: Roboto, 'Segoe UI';">0</p>
+            </div>
+        </div>
+        <div class="keypad">
+            <button class="num" onclick="clearEquation()">C</button>
+            <button class="num" onclick="deleteCharacter()">Del</button>
+            <button class="num" onclick="addToEquation('%')">%</button>
+            <button class="opt" onclick="addToEquation('/')">/</button>
+            <button class="num" onclick="addToEquation('7')">7</button>
+            <button class="num" onclick="addToEquation('8')">8</button>
+            <button class="num" onclick="addToEquation('9')">9</button>
+            <button class="opt" onclick="addToEquation('*')">x</button>
+            <button class="num" onclick="addToEquation('4')">4</button>
+            <button class="num" onclick="addToEquation('5')">5</button>
+            <button class="num" onclick="addToEquation('6')">6</button>
+            <button class="opt" onclick="addToEquation('-')">-</button>
+            <button class="num" onclick="addToEquation('1')">1</button>
+            <button class="num" onclick="addToEquation('2')">2</button>
+            <button class="num" onclick="addToEquation('3')">3</button>
+            <button class="opt" onclick="addToEquation('+')">+</button>
+            <button class="lng num" onclick="addToEquation('0')">0</button>
+            <button class="alng num" onclick="addToEquation('.')">.</button>
+            <button class="aalng opt" onclick="showResult()">=</button>
+        </div>
+    </div>
+</body>
+</html>
